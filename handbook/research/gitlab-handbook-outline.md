@@ -32,7 +32,7 @@
 
 - **A 直接借鉴**：核心原则与本项目目标基本一致，仍需用自己的语言重新论证。
 - **B 改造后借鉴**：包含可迁移模式，但混有 GitLab 组织结构、价值体系或流程假设。
-- **C 实现案例**：主要展示 GitLab、Slack、Zoom 等平台中的具体实现，不应上升为通用协议。
+- **C 实现案例**：主要展示 GitLab、Slack、Zoom 等平台中的具体实现，不应上升为通用规范。
 
 ## GitLab Handbook 全站骨架
 
@@ -105,7 +105,7 @@
 - **B · [Transparency by Default](https://handbook.gitlab.com/handbook/security/transparency-by-default/)**：展示安全团队如何在默认透明与法律、隐私、漏洞风险之间划界，可借鉴其“明确例外”结构。
 - **B · [Deep Dives](https://handbook.gitlab.com/handbook/communication/deep-dives/)**：定义面向已有基础受众的深度知识分享，并规定准备材料、主持、录制和后续发布方式。
 - **C · [Ask Me Anything](https://handbook.gitlab.com/handbook/communication/ask-me-anything/)**：提供开放问答与反向问答的议程、角色和异步收集问题方法，可作为透明沟通形式参考。
-- **C · [GitLab Communication — Zoom](https://handbook.gitlab.com/handbook/communication/zoom/)**：集中描述视频会议工具规范，主要价值是展示平台落地应与通用会议协议分离。
+- **C · [GitLab Communication — Zoom](https://handbook.gitlab.com/handbook/communication/zoom/)**：集中描述视频会议工具规范，主要价值是展示平台落地应与通用会议规范分离。
 
 ## 五、责任、决策与跨团队协作
 
@@ -161,22 +161,22 @@ Handbook 在这些页面中经常把细节链接到 GitLab 官方开发文档。
 
 ## 对本项目目录的启发
 
-GitLab 的相关内容并不是按“协作协议”组织，而是分散在文化、沟通、工程、产品、支持和领导力目录中。直接照搬会导致同一主题跨多个章节重复。因此，本项目更适合按协作对象重新组织：
+GitLab 的相关内容并不是按“协作规范”组织，而是分散在文化、沟通、工程、产品、支持和领导力目录中。直接照搬会导致同一主题跨多个章节重复。因此，本项目更适合按协作对象重新组织：
 
 1. 协作基础：共同上下文、信息边界、人文原则和 Agent 边界。
-2. 沟通协议：消息、行动请求、反馈、分歧和同步升级。
-3. 工作协议：Task、Issue、项目状态、责任和承诺。
-4. 变更协议：Commit、PR/MR、Code Review 和发布前检查。
-5. 决策协议：提案、DRI、决策记录、会议结论和无责复盘。
-6. 知识协议：文档创建、权威来源、链接、审阅、维护和废弃。
-7. 平台落地：在 Handbook 内隔离说明飞书、GitHub、GitLab、Gitea、Slack 等平台如何映射协议。
+2. 沟通规范：消息、行动请求、反馈、分歧和同步升级。
+3. 工作规范：Task、Issue、项目状态、责任和承诺。
+4. 变更规范：Commit、PR/MR、Code Review 和发布前检查。
+5. 决策规范：提案、DRI、决策记录、会议结论和无责复盘。
+6. 知识规范：文档创建、权威来源、链接、审阅、维护和废弃。
+7. 平台落地：在 Handbook 内隔离说明飞书、GitHub、GitLab、Gitea、Slack 等平台如何映射手册要求。
 8. AI 使用：Skill 只规定 AI 如何查阅和引用 Handbook，具体分析与执行由 Agent 自身能力完成。
 
-其中“人文原则”不应独立成为口号章节后便与流程脱离。反馈协议应体现批评工作而非人，会议协议应体现包容和时区公平，项目协议应避免用在线时长衡量贡献，Handbook 也应直接规定 Agent 不得进行人格判断和文化打分。
+其中“人文原则”不应独立成为口号章节后便与流程脱离。反馈规范应体现批评工作而非人，会议规范应体现包容和时区公平，项目规范应避免用在线时长衡量贡献，Handbook 也应直接规定 Agent 不得进行人格判断和文化打分。
 
 ## 后续调查空白
 
 - GitLab Handbook 的信息架构非常庞大，页面间存在历史累积和重复，本导览还未评估每一处冲突。
-- GitLab 的 Commit 细则主要位于官方开发文档而非 Handbook，需要在设计 Commit Protocol 时单独深入调查。
+- GitLab 的 Commit 细则主要位于官方开发文档而非 Handbook，需要在设计 Commit 规范时单独深入调查。
 - 当前 AI 页面集中在代码开发，对 Agent 如何审阅消息、任务、决策和文档的成熟经验较少，本项目需要自行设计。
 - 飞书、中国团队的信息权限、即时沟通习惯和管理语境不能从 GitLab 样本直接推导，需要用本地案例验证。
