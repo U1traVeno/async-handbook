@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Async Handbook">
+  <rect width="32" height="32" rx="6" fill="#176b55"/>
+  <path d="M8 9.5c0-1.1.9-2 2-2h5v17h-5a2 2 0 0 1-2-2v-13Zm9-2h5c1.1 0 2 .9 2 2v13a2 2 0 0 1-2 2h-5v-17Z" fill="#fff"/>
+  <path d="M16 8v17" stroke="#b9eadb" stroke-width="1.5"/>
+</svg>

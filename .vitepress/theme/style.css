@@ -1,0 +1,50 @@
+:root {
+  --vp-c-brand-1: #176b55;
+  --vp-c-brand-2: #0f5946;
+  --vp-c-brand-3: #0b4738;
+  --vp-c-brand-soft: rgba(23, 107, 85, 0.14);
+  --vp-c-tip-1: #176b55;
+  --vp-c-tip-2: #0f5946;
+  --vp-c-tip-3: #0b4738;
+  --vp-c-tip-soft: rgba(23, 107, 85, 0.14);
+  --vp-c-warning-1: #9a5b13;
+  --vp-c-warning-soft: rgba(154, 91, 19, 0.14);
+  --vp-border-radius: 6px;
+}
+
+.dark {
+  --vp-c-brand-1: #58c7a5;
+  --vp-c-brand-2: #71d9b8;
+  --vp-c-brand-3: #9ae6cd;
+  --vp-c-brand-soft: rgba(88, 199, 165, 0.16);
+}
+
+.VPNavBarTitle .title {
+  font-weight: 650;
+}
+
+.VPDoc h1,
+.VPDoc h2,
+.VPDoc h3 {
+  letter-spacing: 0;
+}
+
+.VPDoc h1 {
+  font-size: 34px;
+  line-height: 1.25;
+}
+
+.VPDoc p,
+.VPDoc li {
+  line-height: 1.8;
+}
+
+.VPDoc a {
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .VPDoc h1 {
+    font-size: 28px;
+  }
+}
