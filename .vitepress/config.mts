@@ -4,40 +4,41 @@ const sidebar = [
   {
     text: '开始阅读',
     items: [
-      { text: 'Handbook', link: '/' },
-      { text: '关于异步协作', link: '/00-about-async-work' },
-      { text: '异步协作原则', link: '/01-async-principles' },
-      { text: 'Handbook 编写规范', link: '/02-handbook-writing-guide' },
-      { text: 'Agent 如何使用 Handbook', link: '/03-agent-indexing' }
+      { text: '项目首页', link: '/' },
+      { text: 'Handbook', link: '/handbook/' },
+      { text: '关于异步协作', link: '/handbook/00-about-async-work' },
+      { text: '异步协作原则', link: '/handbook/01-async-principles' },
+      { text: 'Handbook 编写规范', link: '/handbook/02-handbook-writing-guide' },
+      { text: 'Agent 如何使用 Handbook', link: '/handbook/03-agent-indexing' }
     ]
   },
   {
     text: '知识与执行',
     items: [
-      { text: '信息源与知识库架构', link: '/04-knowledge-base-architecture' },
-      { text: '协作文档', link: '/05-documentation-standards' },
-      { text: '任务发布与进度追踪', link: '/06-task-management' },
-      { text: '沟通渠道', link: '/07-communication-channels' },
-      { text: '项目计划与里程碑', link: '/08-project-milestones' }
+      { text: '信息源与知识库架构', link: '/handbook/04-knowledge-base-architecture' },
+      { text: '协作文档', link: '/handbook/05-documentation-standards' },
+      { text: '任务发布与进度追踪', link: '/handbook/06-task-management' },
+      { text: '沟通渠道', link: '/handbook/07-communication-channels' },
+      { text: '项目计划与里程碑', link: '/handbook/08-project-milestones' }
     ]
   },
   {
     text: '团队协作',
     items: [
-      { text: '会议', link: '/09-meetings' },
-      { text: '决策记录与责任归属', link: '/10-decision-records' },
-      { text: '组织运行节奏', link: '/11-operating-cadence' },
-      { text: '入职、交接与知识传承', link: '/12-onboarding-handoffs' },
-      { text: '术语表', link: '/13-glossary' }
+      { text: '会议', link: '/handbook/09-meetings' },
+      { text: '决策记录与责任归属', link: '/handbook/10-decision-records' },
+      { text: '组织运行节奏', link: '/handbook/11-operating-cadence' },
+      { text: '入职、交接与知识传承', link: '/handbook/12-onboarding-handoffs' },
+      { text: '术语表', link: '/handbook/13-glossary' }
     ]
   },
   {
     text: '项目资料',
     items: [
-      { text: '研究材料', link: '/research/' },
+      { text: '研究材料', link: '/handbook/research/' },
       {
         text: 'GitLab Handbook 导览',
-        link: '/research/gitlab-handbook-outline'
+        link: '/handbook/research/gitlab-handbook-outline'
       }
     ]
   }
@@ -47,7 +48,8 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'Async Handbook',
   description: '面向 IT 团队与 AI Agent 的异步协作规范',
-  srcDir: 'handbook',
+  srcDir: '.',
+  publicDir: 'handbook/public',
   cleanUrls: true,
   lastUpdated: true,
   sitemap: {
@@ -55,7 +57,8 @@ export default defineConfig({
   },
   rewrites: {
     'README.md': 'index.md',
-    'research/README.md': 'research/index.md'
+    'handbook/README.md': 'handbook/index.md',
+    'handbook/research/README.md': 'handbook/research/index.md'
   },
   head: [
     ['meta', { name: 'theme-color', content: '#176b55' }],
@@ -64,10 +67,11 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
     nav: [
-      { text: 'Handbook', link: '/' },
-      { text: '原则', link: '/01-async-principles' },
-      { text: '编写规范', link: '/02-handbook-writing-guide' },
-      { text: '研究材料', link: '/research/' }
+      { text: '项目首页', link: '/' },
+      { text: 'Handbook', link: '/handbook/' },
+      { text: '原则', link: '/handbook/01-async-principles' },
+      { text: '编写规范', link: '/handbook/02-handbook-writing-guide' },
+      { text: '研究材料', link: '/handbook/research/' }
     ],
     sidebar,
     outline: {
@@ -92,7 +96,7 @@ export default defineConfig({
       }
     },
     editLink: {
-      pattern: 'https://github.com/U1traVeno/async-handbook/edit/main/handbook/:path',
+      pattern: 'https://github.com/U1traVeno/async-handbook/edit/main/:path',
       text: '在 GitHub 上编辑此页'
     },
     lastUpdated: {
