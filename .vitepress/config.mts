@@ -1,5 +1,8 @@
 import { defineConfig } from 'vitepress'
 
+const repository = process.env.GITHUB_REPOSITORY ?? 'U1traVeno/async-handbook'
+const siteUrl = process.env.SITE_URL ?? 'https://handbook.v3n0.top'
+
 const sidebar = [
   {
     text: '开始阅读',
@@ -48,12 +51,13 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'Async Handbook',
   description: '面向 IT 团队与 AI Agent 的异步协作规范',
+  base: process.env.BASE_PATH || '/',
   srcDir: '.',
   publicDir: 'handbook/public',
   cleanUrls: true,
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://handbook.v3n0.top'
+    hostname: siteUrl
   },
   rewrites: {
     'README.md': 'index.md',
@@ -96,7 +100,7 @@ export default defineConfig({
       }
     },
     editLink: {
-      pattern: 'https://github.com/U1traVeno/async-handbook/edit/main/:path',
+      pattern: `https://github.com/${repository}/edit/main/:path`,
       text: '在 GitHub 上编辑此页'
     },
     lastUpdated: {
@@ -116,7 +120,7 @@ export default defineConfig({
     sidebarMenuLabel: '目录',
     returnToTopLabel: '返回顶部',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/U1traVeno/async-handbook' }
+      { icon: 'github', link: `https://github.com/${repository}` }
     ],
     footer: {
       message: 'Handbook 的所有内容始终处于草稿状态并可以被修改。',
