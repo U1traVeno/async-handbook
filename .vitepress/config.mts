@@ -8,8 +8,8 @@ const sidebar = [
     text: '开始阅读',
     items: [
       { text: '项目首页', link: '/' },
-      { text: 'Handbook', link: '/handbook/' },
-      { text: '关于异步协作', link: '/handbook/00-about-async-work' },
+      { text: '目录', link: '/handbook/' },
+      { text: '异步协作介绍', link: '/handbook/00-about-async-work' },
       { text: '异步协作原则', link: '/handbook/01-async-principles' },
       { text: 'Handbook 编写规范', link: '/handbook/02-handbook-writing-guide' },
       { text: 'Agent 如何使用 Handbook', link: '/handbook/03-agent-indexing' }
