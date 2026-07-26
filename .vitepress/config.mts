@@ -4,11 +4,11 @@ const repository = process.env.GITHUB_REPOSITORY ?? 'U1traVeno/async-handbook'
 const siteUrl = process.env.SITE_URL ?? 'https://handbook.v3n0.top'
 
 const sidebar = [
+  { text: '项目首页', link: '/' },
+  { text: '目录', link: '/handbook/' },
   {
-    text: '开始阅读',
+    text: '基础',
     items: [
-      { text: '项目首页', link: '/' },
-      { text: '目录', link: '/handbook/' },
       { text: '异步协作介绍', link: '/handbook/00-about-async-work' },
       { text: '异步协作原则', link: '/handbook/01-async-principles' },
       { text: 'Handbook 编写规范', link: '/handbook/02-handbook-writing-guide' },
@@ -16,33 +16,30 @@ const sidebar = [
     ]
   },
   {
-    text: '知识与执行',
+    text: '信息流通',
     items: [
-      { text: '信息源与知识库架构', link: '/handbook/04-knowledge-base-architecture' },
+      { text: '知识架构', link: '/handbook/04-knowledge-base-architecture' },
       { text: '协作文档', link: '/handbook/05-documentation-standards' },
-      { text: '任务发布与进度追踪', link: '/handbook/06-task-management' },
-      { text: '沟通渠道', link: '/handbook/07-communication-channels' },
-      { text: '项目计划与里程碑', link: '/handbook/08-project-milestones' }
+      { text: '任务管理', link: '/handbook/06-task-management' },
+      { text: '沟通渠道的选择', link: '/handbook/07-communication-channels' }
     ]
   },
   {
-    text: '团队协作',
+    text: '团队运作',
     items: [
+      { text: '项目里程碑', link: '/handbook/08-project-milestones' },
       { text: '会议', link: '/handbook/09-meetings' },
-      { text: '决策记录与责任归属', link: '/handbook/10-decision-records' },
+      { text: '决策记录', link: '/handbook/10-decision-records' },
       { text: '组织运行节奏', link: '/handbook/11-operating-cadence' },
-      { text: '入职、交接与知识传承', link: '/handbook/12-onboarding-handoffs' },
-      { text: '术语表', link: '/handbook/13-glossary' }
+      { text: '入职、交接与知识传承', link: '/handbook/12-onboarding-handoffs' }
     ]
   },
   {
-    text: '项目资料',
+    text: '附录',
     items: [
+      { text: '术语表', link: '/handbook/13-glossary' },
       { text: '研究材料', link: '/handbook/research/' },
-      {
-        text: 'GitLab Handbook 导览',
-        link: '/handbook/research/gitlab-handbook-outline'
-      }
+      { text: 'GitLab Handbook 导览', link: '/handbook/research/gitlab-handbook-outline' }
     ]
   }
 ]

@@ -11,15 +11,23 @@ description: Use when working on any team collaboration task — writing or revi
 
 ## 操作流程
 
-1. 先阅读 [handbook/README.md](../handbook/README.md) 中的目录，了解各章节覆盖范围
+1. 先阅读 [目录](https://handbook.v3n0.top/raw/handbook/index.md) 了解各章节覆盖范围
 2. 根据当前情况判断属于哪一类协作问题，选择对应章节
 3. 阅读目标章节的完整内容，沿内部链接补齐相关上下文
 
-遇到不熟悉的术语，查阅 [13-glossary](../handbook/13-glossary.md)。
+遇到不熟悉的术语，查阅 [术语表](https://handbook.v3n0.top/raw/handbook/13-glossary.md)。
+
+## 阅读手册的最佳方式
+
+所有 Handbook 页面在 `https://handbook.v3n0.top/raw/` 下提供原始 Markdown 正文，无 HTML 格式化信息。Agent 应始终通过 `/raw/` 路由访问手册。
+
+手册正文中的内部链接是 VitePress 格式的相对路径（如 `[术语表](13-glossary.md)`），不含 `/raw/` 前缀和 `.md` 扩展名。跟进这些链接时，需要自行补全：将相对路径加上 `/raw/` 前缀和 `.md` 扩展名。例如正文中的 `[术语表](13-glossary.md)` 应解析为 `https://handbook.v3n0.top/raw/handbook/13-glossary.md`。
+
+不要直接访问不带 `/raw/` 前缀的 VitePress 路由——那些页面包含 HTML 和导航结构，不适合 Agent 直接消费。
 
 ## 查阅与引用
 
-如何阅读规范、如何引用、Handbook 未覆盖时如何处理、Agent 的行动边界，见 [03-agent-indexing](../handbook/03-agent-indexing.md)。
+如何阅读规范、如何引用、Handbook 未覆盖时如何处理、Agent 的行动边界，见 [Agent 如何使用 Handbook](https://handbook.v3n0.top/raw/handbook/03-agent-indexing.md)。
 
 ## 维护
 
