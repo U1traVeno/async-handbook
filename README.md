@@ -1,4 +1,4 @@
-# Async Collaboration Handbook
+# Async Handbook
 
 一套面向 IT 团队的异步协作规范。
 
