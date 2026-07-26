@@ -19,11 +19,19 @@ description: Use when working on any team collaboration task — writing or revi
 
 ## 阅读手册的最佳方式
 
-所有 Handbook 页面在 `https://handbook.v3n0.top/raw/` 下提供原始 Markdown 正文，无 HTML 格式化信息。Agent 应始终通过 `/raw/` 路由访问手册。
+所有 Handbook 页面在 `https://handbook.v3n0.top/raw/` 下提供原始 Markdown 正文。Agent 应始终通过此路由访问手册。
 
-手册正文中的内部链接是 VitePress 格式的相对路径（如 `[术语表](13-glossary.md)`），不含 `/raw/` 前缀和 `.md` 扩展名。跟进这些链接时，需要自行补全：将相对路径加上 `/raw/` 前缀和 `.md` 扩展名。例如正文中的 `[术语表](13-glossary.md)` 应解析为 `https://handbook.v3n0.top/raw/handbook/13-glossary.md`。
+### 始终从网络获取最新版本
 
-不要直接访问不带 `/raw/` 前缀的 VitePress 路由——那些页面包含 HTML 和导航结构，不适合 Agent 直接消费。
+Handbook 是一份持续修改的活文档，合并到主分支后立即生效。不要克隆仓库在本地阅读——本地副本会在下一次更新后过时。不要依赖训练数据或之前会话中读到的内容——手册随时可能被修改，你记忆中（或训练数据中）的版本可能已经不是当前规范。
+
+每次引用手册时，都从网络获取对应页面，以获取时看到的正文为准。
+
+### 链接补全
+
+手册正文中的内部链接是 VitePress 格式的相对路径（如 `[术语表](13-glossary.md)`），不含 `/raw/` 前缀和 `.md` 扩展名。跟进这些链接时自行补全：将相对路径加上 `/raw/` 前缀和 `.md` 扩展名。例如正文中的 `[术语表](13-glossary.md)` 应解析为 `https://handbook.v3n0.top/raw/handbook/13-glossary.md`。
+
+不要直接访问不带 `/raw/` 前缀的 VitePress 路由——那些页面包含 HTML 和导航结构，不适合直接消费。
 
 ## 查阅与引用
 
